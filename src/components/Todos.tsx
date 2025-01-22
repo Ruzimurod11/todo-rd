@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "../hook";
 import { clearCompleted } from "../features/todoSlice";
 
 const Todos: React.FC = () => {
-   const [done, setDone] = useState("");
+   const [done, setDone] = useState("All");
    const dispatch = useAppDispatch();
    const { todos } = useAppSelector((store) => store.todos);
 
